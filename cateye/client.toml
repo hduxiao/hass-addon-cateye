@@ -1,0 +1,24 @@
+[auth]
+token = "replace-with-your-token"
+server_public_key = "replace-with-your-server-public-key"
+
+[log]
+level = "info"
+dir = "/config/log"
+
+[admin]
+enabled = true
+bind_addr = "127.0.0.1"
+port = 19901
+username = "admin"
+password = "CateyeHA!2026"
+
+[client]
+server_addr = "your.server.example.com"
+port = 19100
+
+[[tunnels]]
+name = "homeassistant"
+local_addr = "127.0.0.1"
+local_port = 8123
+type = "tcp"
